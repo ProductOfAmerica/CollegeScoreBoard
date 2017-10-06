@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="CENTER" gridLinesVisible="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="846.0" prefWidth="1251.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ScoreBoard.Main">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <top>
+            <Text fill="#24abdf" strokeType="OUTSIDE" strokeWidth="0.0" text="Brooks" textAlignment="CENTER" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Ebrima Bold" size="31.0" />
+               </font>
+            </Text>
+         </top>
+         <bottom>
+            <Text fx:id="brooks" strokeType="OUTSIDE" strokeWidth="0.0" text="0" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Calibri Bold" size="50.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets bottom="15.0" />
+               </BorderPane.margin>
+            </Text>
+         </bottom>
+         <center>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../../Images/BrooksDone.png" />
+               </image>
+            </ImageView>
+         </center>
+      </BorderPane>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+         <top>
+            <Text fill="#0e4424" strokeType="OUTSIDE" strokeWidth="0.0" text="Buck" textAlignment="CENTER" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Ebrima Bold" size="31.0" />
+               </font>
+            </Text>
+         </top>
+         <center>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../../Images/BuckDone.png" />
+               </image>
+            </ImageView>
+         </center>
+         <bottom>
+            <Text fx:id="buck" strokeType="OUTSIDE" strokeWidth="0.0" text="0" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Calibri Bold" size="50.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets bottom="15.0" />
+               </BorderPane.margin>
+            </Text>
+         </bottom>
+      </BorderPane>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
+         <top>
+            <Text fill="#991d2c" strokeType="OUTSIDE" strokeWidth="0.0" text="Lowrey" textAlignment="CENTER" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Ebrima Bold" size="31.0" />
+               </font>
+            </Text>
+         </top>
+         <bottom>
+            <Text fx:id="lowrey" strokeType="OUTSIDE" strokeWidth="0.0" text="0" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Calibri Bold" size="50.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets bottom="15.0" />
+               </BorderPane.margin>
+            </Text>
+         </bottom>
+         <center>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../../Images/LowreyDone.png" />
+               </image>
+            </ImageView>
+         </center>
+      </BorderPane>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+         <top>
+            <Text fill="#eb212e" strokeType="OUTSIDE" strokeWidth="0.0" text="Howard" textAlignment="CENTER" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Ebrima Bold" size="31.0" />
+               </font>
+            </Text>
+         </top>
+         <bottom>
+            <Text fx:id="howard" strokeType="OUTSIDE" strokeWidth="0.0" text="0" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Calibri Bold" size="50.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets bottom="15.0" />
+               </BorderPane.margin>
+            </Text>
+         </bottom>
+         <center>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../../Images/HowardDone.png" />
+               </image>
+            </ImageView>
+         </center>
+      </BorderPane>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <top>
+            <Text fill="#add16e" strokeType="OUTSIDE" strokeWidth="0.0" text="Syl" textAlignment="CENTER" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Ebrima Bold" size="31.0" />
+               </font>
+            </Text>
+         </top>
+         <bottom>
+            <Text fx:id="syl" strokeType="OUTSIDE" strokeWidth="0.0" text="0" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Calibri Bold" size="50.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets bottom="15.0" />
+               </BorderPane.margin>
+            </Text>
+         </bottom>
+         <center>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../../Images/SylvesterDone.png" />
+               </image>
+            </ImageView>
+         </center>
+      </BorderPane>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <top>
+            <Text fill="#ffdc39" strokeType="OUTSIDE" strokeWidth="0.0" text="Ferg" textAlignment="CENTER" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Ebrima Bold" size="31.0" />
+               </font>
+            </Text>
+         </top>
+         <bottom>
+            <Text fx:id="ferg" strokeType="OUTSIDE" strokeWidth="0.0" text="0" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Calibri Bold" size="50.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets bottom="15.0" />
+               </BorderPane.margin>
+            </Text>
+         </bottom>
+         <center>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../../Images/FergDone.png" />
+               </image>
+            </ImageView>
+         </center>
+      </BorderPane>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+         <top>
+            <Text fill="#292c65" strokeType="OUTSIDE" strokeWidth="0.0" text="Rackham" textAlignment="CENTER" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Ebrima Bold" size="31.0" />
+               </font>
+            </Text>
+         </top>
+         <bottom>
+            <Text fx:id="rakcham" strokeType="OUTSIDE" strokeWidth="0.0" text="0" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Calibri Bold" size="50.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets bottom="15.0" />
+               </BorderPane.margin>
+            </Text>
+         </bottom>
+         <center>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../../Images/RackhamDone.png" />
+               </image>
+            </ImageView>
+         </center>
+      </BorderPane>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <top>
+            <Text fill="#510e1d" strokeType="OUTSIDE" strokeWidth="0.0" text="Anderson" textAlignment="CENTER" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Ebrima Bold" size="31.0" />
+               </font>
+            </Text>
+         </top>
+         <bottom>
+            <Text fx:id="anderson" strokeType="OUTSIDE" strokeWidth="0.0" text="0" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Calibri Bold" size="50.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets bottom="15.0" />
+               </BorderPane.margin>
+            </Text>
+         </bottom>
+         <center>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../../Images/AndersonDone.png" />
+               </image>
+            </ImageView>
+         </center>
+      </BorderPane>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <top>
+            <Text fill="#0d9348" strokeType="OUTSIDE" strokeWidth="0.0" text="Joe" textAlignment="CENTER" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Ebrima Bold" size="31.0" />
+               </font>
+            </Text>
+         </top>
+         <bottom>
+            <Text fx:id="joe" strokeType="OUTSIDE" strokeWidth="0.0" text="0" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="Calibri Bold" size="50.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets bottom="15.0" />
+               </BorderPane.margin>
+            </Text>
+         </bottom>
+         <center>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../../Images/JoeMcNabbDone.png" />
+               </image>
+            </ImageView>
+         </center>
+      </BorderPane>
+   </children>
+</GridPane>
