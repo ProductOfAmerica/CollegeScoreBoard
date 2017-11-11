@@ -49,7 +49,7 @@ public class Controller {
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
         alert.setTitle("2016 House Olympics");
         alert.setHeaderText("Are you sure you want to reset all houses?");
-        alert.setContentText("Please choose:");
+        alert.setContentText("This will reset all scores for every house.");
         Optional<ButtonType> result = alert.showAndWait();
 
         if (result.isPresent() && result.get() == ButtonType.OK) {

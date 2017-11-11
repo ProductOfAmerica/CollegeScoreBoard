@@ -60,12 +60,14 @@ public class Main extends Application implements Initializable {
         /*
           Display stage
          */
-        displayStage.setTitle("2016 House Olympics - Credit: Lee Tarnow");
+        displayStage.setTitle("2017 House Olympics - Credit: Lee Tarnow");
         Scene dispScene = new Scene(FXMLLoader.load(getClass().getResource("FXML/Main.fxml")), displayStage.getWidth(), displayStage.getHeight());
         dispScene.setOnKeyPressed(ke -> {
             if (ke.getCode() == KeyCode.F11) {
                 if (!displayStage.isFullScreen())
                     displayStage.setFullScreen(true);
+                else
+                    displayStage.setFullScreen(false);
             }
         });
         displayStage.setOnCloseRequest(we -> controllerStage.close());
@@ -88,11 +90,11 @@ public class Main extends Application implements Initializable {
 
     private void validateDate() throws ParseException {
         SimpleDateFormat sdf = new SimpleDateFormat("MM/yyyy");
-        if (sdf.parse("11/2016").compareTo(sdf.parse(sdf.format(new Date()))) != 0) {
+        if (sdf.parse("11/2017").compareTo(sdf.parse(sdf.format(new Date()))) != 0) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("2016 House Olympics - ERROR");
             alert.setHeaderText(null);
-            alert.setContentText("This program is no longer usable.");
+            alert.setContentText("This program is no longer supported.");
             alert.showAndWait();
 
             System.exit(0);
